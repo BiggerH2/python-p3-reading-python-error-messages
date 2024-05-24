@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
 import runpy
+import pytest
 
 class TestNameError:
-    '''
-    a_name_error.py
-    '''
-
     def test_name_error(self):
         '''
         contains defined name "hello_world"
         '''
-
         runpy.run_path('lib/a_name_error.py')
 
 class TestSyntaxError:
